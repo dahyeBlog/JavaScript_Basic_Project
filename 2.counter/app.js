@@ -1,31 +1,34 @@
+const number = document.getElementById('value')
+const btns = document.querySelectorAll('.btn')
+// console.log(btns);
+
 let count = 0
 
-const value = document.getElementById('value')
-const btns = document.querySelectorAll('.btn')
-
-
 btns.forEach((btn) => {
-  btn.addEventListener('click', (e)=>{
-    const styles = e.currentTarget.classList
-    // console.log(styles);
-    if(styles.contains('decrease')){
+  btn.addEventListener('click', (e) => {
+    const styles = e.currentTarget.classList;
+
+    if(styles.contains("decrease")) {
       count--
-    }else if(styles.contains('increase')){
+    } else if (styles.contains("increase")) {
       count++
-    }else{
+    } else {
       count = 0
     }
-
+    
     if(count > 0) {
-      value.style.color = 'green'
+      number.style.color = 'green'
     }
+
     if(count < 0) {
-      value.style.color = 'red'
+      number.style.color = 'red'
     }
-    if(count === 0){
-      value.style.color = '#222'
+
+    if(count === 0) {
+      number.style.color = 'black'
     }
-    value.textContent = count;
+
+
+    number.textContent = count
   })
-  
-});
+})
