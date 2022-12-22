@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>이미지 검색</title>
+        <!-- font-awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+
+        <!-- axios cdn -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js" defer="defer"></script>
+
+        <!-- styles -->
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <section class="image-container">
+            <div class="image-wrapper">
+                <div class="image-search">
+                    <h2>원하는 이미지를 검색하세요 😎</h2>
+
+                    <div class="image-search-box">
+                        <input
+                            type="text"
+                            class="search-control"
+                            id="search-input"
+                            placeholder="이미지를 검색하세요.">
+                        <button type="submit" class="search-btn btn" id="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-result">
+                <h2>검색 결과</h2>
+                <div id="images">
+                    <!-- image 결과 -->
+                    <!-- <div class="image-results">
+                        <div class="img">
+                            <img src="" alt="">
+                        </div>
+
+                        <div class="name">
+                            <h3>name</h3>
+                            <a href="">이미지 바로가기</a>
+                        </div>
+                    </div> -->
+                </div>
+
+            </div>
+
+        </section>
+        <!-- javascript -->
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto sans-serif;
+  line-height: 1.6;
+}
+
+.image-container{
+  min-height: 100vh;
+}
+
+.image-wrapper{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.image-search{
+  margin: 2rem 0;
+}
+
+.image-search-box{
+  margin: 1.2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-control,.search-btn{
+  width: 30%;
+  
+}
+
+.search-control {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  font-family: inherit;
+  outline: 0;
+  border: 1px solid #eee;
+  color: #444444;
+
+}
+
+.search-btn {
+  width: 55px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  color: #fff;
+  background-color: #444444;
+}
+
+.image-result{
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#images{
+  max-width: 1280px;
+
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.image-results{
+  margin-top: 2rem;
+
+}
+
+.img img{
+ border-radius: 10px;
+ box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  cursor: pointer;
+}
+
+.img img:hover{
+  transform: scale(1.2);
+  transition: all 2s;
+}
+
+.name a{
+text-decoration: none;
+color: #444444;
+font-size: 20px;
+font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  #images{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+  }
+
+}
