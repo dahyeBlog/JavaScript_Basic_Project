@@ -1,6 +1,7 @@
 # 랜덤 음식메뉴 사이트 만들기
 
 ## 데모사이트
+- https://random-food-blog.netlify.app/
 
 ## Axios를 이용해서 API 호출 해보기
 - Axios는 Promise API를 활용하는 Http 비동기 통신 라이브러리 이다. 
